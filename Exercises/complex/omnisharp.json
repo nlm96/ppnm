@@ -1,0 +1,20 @@
+{
+    "MsBuild": {
+      "UseLegacySdkResolver": true
+    },
+    "FormattingOptions": {
+      "OrganizeImports": false
+    },
+    "OmniSharp": {
+      "RoslynExtensionsOptions": {
+        "EnableAnalyzersSupport": true
+      }
+    },
+    "ExcludedProjects": [
+      "bin",
+      "obj",
+      ".vscode",
+      ".git"
+    ]
+  }
+  

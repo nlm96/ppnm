@@ -1,0 +1,23 @@
+Exercise 1
+My max int is 2147483647
+The max int fron int.MaxValue is 2147483647
+
+My min int is -2147483648
+The min int from int.MinValue is -2147483648
+
+Exercise 2
+x is 2.22044604925031E-16 and should be 2.22044604925031E-16
+x/2+1 results in 1
+y is 1.192093E-07 and should be 1.19209289550781E-07
+y/2+1 results in 1
+
+Exercise 3
+sumA-1 = 0.000000e+000 should be 1.110223e-010
+sumB-1 = 1.110223e-010 should be 1.110223e-010
+The difference is from the binary representation of both the numbers.
+The value tiny is smaller than the possible representable number in double-precision, so sumA and sumB are subject to rounding errors. 
+When tiny is added to 1, the resulting sum is rounded to 1 due to the limited precision of the floating-point system.
+
+Exercise 4
+approx(a=1e-10, b=1.1e-10) = True
+approx(a=1e-9, b=1.1e-9) = True

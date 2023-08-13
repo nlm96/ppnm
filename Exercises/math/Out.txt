@@ -1,0 +1,26 @@
+Exercise 1
+sqrt(2) = 1.4142135623731
+2^(1/5) = 1.14869835499704
+exppi = 23.1406926327793
+piexp = 22.459157718361
+sqrt2*sqrt2 = 2 (should be equal 2)
+(2^(1/5))^5 = 2 (should be equal 2)
+ln(expPi) = 3.14159265358979 (should be equal 3.14159265358979)
+log10(piPowExp) = 2.71828182845905 (should be equal 2.71828182845905)
+
+Exercise 2
+gamma(1)=0.999999989064903, should be 1
+gamma(2)=0.999999989064903, should be 1
+gamma(3)=1.99999997812981, should be 2
+gamma(10)=362879.997652016, should be 362880
+
+Exercise 3
+lngamma(1) = -1.09350976051914E-08
+lngamma(2) = -1.09350976051914E-08
+lngamma(3) = 0.693147169624848
+lngamma(10) = 12.8018274736111
+Then we can get
+Exp(lngamma(1)) = 0.999999989064903
+Exp(lngamma(2)) = 0.999999989064903
+Exp(lngamma(3)) = 1.9999999781298
+Exp(lngamma(10)) = 362879.997652016

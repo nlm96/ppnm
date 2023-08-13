@@ -1,0 +1,17 @@
+Vector v1: 1 2 3
+
+Vector v2: 4 5 6
+
+Sum of v1 and v2: 5 7 9
+
+Substraction of v1 and v2: -3 -3 -3
+
+Scaled v1 (2.5 * v1):2.5 5 7.5
+
+Dot product of v1 and v2: 32
+
+Dot product of v1 and v2: 32
+crossproduct (type1): -3 6 -3
+Crossproduct t2: -3 6 -3
+
+Norm of v1: 3.74165738677394
