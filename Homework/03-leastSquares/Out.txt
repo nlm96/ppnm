@@ -1,0 +1,13 @@
+Part A,B,C are all solved at the same time:
+
+The best fit is found to be:
+ y(x)=141.338164625218*exp(-0.169887082001008*x)
+With uncertainties: a=141.338164625218±4.7981133034953 , lambda=0.169887082001008±0.00695008119420514
+
+part(A): The best fit is and data with errorbars is plotted in Decay.svg in plots folder
+Part C): The upper and lower bounds to the fit is plotted in Decay.svg
+
+
+The halflife is found to be (part A and B):
+HalfLife = 4.08004641904341±0.166914715082983 days
+The known value of 224Ra is 3.631(2) days "Bé et al., 2004; DDEP, 2018", So it does not agree.
