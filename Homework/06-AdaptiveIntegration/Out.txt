@@ -1,0 +1,23 @@
+Part (A):
+
+
+A test with the following integrals is done:
+
+∫[0,1] √x dx = 0.666953909054655 (Expected: 2/3)
+∫[0,1] 1/√x dx = 1.99996150007805 (Expected: 2)
+∫[0,1] 4√(1-x^2) dx = 3.14183457802727 (Expected: π)
+∫[0,1] ln(x)/√x dx = -3.99991705899915 (Expected: -4)
+The error function (erf(x)) has been implemented using its integral representation.
+The comparison between the computed result and the approximation from the plot exercise is displayed in erf.svg.
+Upon observation at the plotted scale, no significant distinction is evident.
+
+
+Part B:
+
+Testing Clenshaw Curtis transformation:
+With Clenshaw Curtis: ∫[0,1] 1/√x dx = 1.99999201046432 (Expected: 2), Evaluations: 7
+With normal integrate: ∫[0,1] 1/√x dx = 1.99996150007805 (Expected: 2), Evaluations: 4285
+With Clenshaw Curtis: ∫[0,1] ln(x)/√x dx = -3.99987385646141 (Expected: -4), Evaluations: 47
+With normal integrate: ∫[0,1] ln(x)/√x dx = -3.99991705899915 (Expected: -4), Evaluations: 4301
+
+Compared to python they find the results, with the same tolerance, in 231 and 315 evaluations respectivly
