@@ -1,0 +1,31 @@
+Part A:
+
+The root-finding routine is tested on some one and two dimensional equations with known analytical roots:
+
+One-dimensional case:
+Equation: x^2 - 4 = 0
+Known analytical root: x = ±2
+Initial guess: 1
+Found root: 2.00007901394269
+Function value at root: 0.000316062013967056
+
+Two-dimensional case:
+Equations: x^2 - 2 = 0, y^2 - 3 = 0
+Known analytical roots: x = ±1.4142135623731, y = ±1.73205080756888
+Initial guess: 1, 1
+Found root: 1.41421568629544, 1.73214285728812
+Function values at root: (6.00736407951885E-06, 0.000318878054258231)
+
+-------------------------------------------------------------------------------
+
+The root finder is now used on Rosenbrock's valley function f(x,y) = (1-x)^2+100(y-x^2)^2
+To find its extremum points
+
+ We want to find the roots of Grad(f)=(df/dx, df/dy) = (2(x-1)+400x(x^2-y),200(y-x^2))=0
+
+Initial guess: x_initial=8, y_initial=8
+Found roots: x0=1.0000133558306, y0=1.000026384768
+Function values at root: (0.000157542036447951, -6.54143139655616E-05)
+Applying the shooting method reveals the binding energy of the lowest bound S-electron in a hydrogen atom as -0.499974930663055. This aligns with the anticipated value of -0.5.
+Visualizing the results, the wavefunction is depicted in solution.svg, mirroring the analytical solution very closely.
+Additionally, the convergence assessments for rmax, rmin, acc, and eps are graphed in the convergence.svg file.

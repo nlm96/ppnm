@@ -43,6 +43,7 @@ class Program
 
     static void partA()
     {
+        WriteLine("Part A:\n");
         double highestSamplingArea = 0;
         double highestSamplingError = 0;
 

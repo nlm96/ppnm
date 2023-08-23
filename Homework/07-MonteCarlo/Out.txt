@@ -1,9 +1,11 @@
-Integral over r^2*sin(theta) with r from 0 to 1 and theta from 0 to 2*pi is calculated as: 3.14173796115283 +- 0.00057358113822645
+Part A:
+
+Integral over r^2*sin(theta) with r from 0 to 1 and theta from 0 to 2*pi is calculated as: 3.14124537106258 +- 0.00057347535221694
 It should be pi = 3.14159265358979
 The error as a function of sampling points are plotted in uni_error.svg
 The area as a function of sampling points are plotted in unicircle.svg
 
-Integral over 1-(cos(x)*cos(y)*cos(z))^-1 is calculated to be 1.39675143754355 +- 0.00405275888798579
+Integral over 1-(cos(x)*cos(y)*cos(z))^-1 is calculated to be 1.38549404552965 +- 0.00237235576276321
 It should be Gamma(1/4)^4 / (5*PI^3) = 1.3932039296856768591842462603255
 
 
