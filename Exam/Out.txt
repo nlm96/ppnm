@@ -1,0 +1,73 @@
+
+Exam Q12: Bare Bones Particle Swarm Optimization
+
+
+---------------------------------------------------------------------------------------------------
+Simple test of algorithm:
+
+The function being tested is: f(x, y) = (x - 2)^2 + y^2
+
+Algorithm converged before reaching max iterations. Iterations used:  120
+
+Estimated Global Minimum:
+Coordinates (x0,y0): (1.99999999999207, -6.36000664792187E-12)
+Functional value f(x0,y0): 1.03336186753656E-22
+
+True Global Minimum:
+Coordinates (x0,y0): (2, 0)
+Functional value f(x0,y0): 0
+---------------------------------------------------------------------------------------------------
+test of algorithm:
+
+The function being tested is: f(x,y) = (x-2)^2+(y-2)^2+2sin(3*pi/4 *x)+2sin(3*pi/4* y)
+This function has a clear global minimum around (2,2) but a lot of local minima too
+
+Using lower search bound: (-1000,-1000)
+Using upper search bound: (1000,1000)
+
+Algorithm converged before reaching max iterations. Iterations used:  130
+
+Estimated Global Minimum:
+Coordinates (x0,y0): (2.00000000400074, 2.00000000538872)
+Functional value f(x0,y0): -4
+
+True Global Minimum:
+Coordinates (x0,y0): (2, 2)
+Functional value f(x0,y0): -4
+
+
+---------------------------------------------------------------------------------------------------
+The function being tested is  Rosenbrock's valley function: f(x,y) = (1-x)^2 + 100(y-x^2)^2
+This function has a clear global minimum around (1,1) but a narrow valley
+
+Using lower search bound: (-1000,-1000)
+Using upper search bound: (1000,1000)
+
+Algorithm reached max iterations without convergence.
+
+Estimated Global Minimum:
+Coordinates (x0,y0): (1, 1)
+Functional value f(x0,y0): 0
+Number of iterations used: 10000
+
+True Global Minimum:
+Coordinates (x0,y0): (1, 1)
+Functional value f(x0,y0): 0
+
+
+
+
+-------------------------------------------------------------------------------------------
+Convergence tests has been done on the rosenbrockFunc, by trying to vary the input parameters
+I have plotted the functional value evaluated at the estimated global minimum as function of changing input parameter
+I have additionally tracked the number of iterations used
+The convergence tests can be seen in the plot folder
+However, it seems that the algorithm finds the minmum relatively fast.
+Since the particles start position is generated randomly, each run has different starting points, which makes it difficult to compare
+So to truly make a correct test, one would have to make a statistical analysis for the convergence
+
+
+-----------------------------------------------------------------------------------------
+A gif tracking the particles motion during the algorithm can be seen in particle_movement.gif
+The gif represents the finding of global minima on (x-2)^2 + (y-2)^2 +2*sin(3pi/4 *x) + 2*sin(3pi/4 *y)
+Algorithm reached max iterations without convergence.

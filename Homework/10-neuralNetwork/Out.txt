@@ -1,0 +1,8 @@
+Evaluating Artificial Neural Networks
+
+Total hidden neurons: 6
+Objective: Interpolating f2(x) = Cos(5*x-1)*Exp(-x*x)
+Using a Gaussian wavelet as the activation function for the neurons
+
+Number of steps to minimize the Cost function in the neural network: 99999
+

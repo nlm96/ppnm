@@ -1,0 +1,27 @@
+
+Part A:
+
+Finding minimum of Rosenbrock's valley function:
+guess values: 2, 2
+Coordinates for minimum is found to be: (1.0000024529284, 1.00000493510775)
+Minimum found: f(1.0000024529284, 1.00000493510775) = 6.10238433837016E-12
+Expected minimum: f(1, 1) = 0
+Number of steps taken: 24941
+
+Finding minimum of Himmelblau's function:
+guess values: 1, 1
+Minimum found: f(2.99999999534719, 1.99999996193078) = 2.89810878610157E-14
+Expected minimums: f(3, 2) = 0, f(-2.805118, 3.131312) = 1.09892966532948E-11, f(-3.779310, -3.283186) = 3.79786108286383E-12, f(3.584428, -1.848126) = 8.89437649758242E-12
+Number of steps taken: 473
+
+
+-------------------------------------------------------------------------------
+
+Part B:
+
+Higgs Boson Fitting
+===================
+Performing Breit-Wigner Fit to Higgs Data
+Fit results: A = 9.87475044009357, m = 125.97219205823, Γ = 2.08602028841696
+Plot of the fit can be found in BreitWigner_fit.svg
+===================
