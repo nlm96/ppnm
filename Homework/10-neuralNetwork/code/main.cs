@@ -1,6 +1,8 @@
 using System;
 using static System.Console;
 using static System.Math;
+using special.functions;
+using special;
 
 class Program {
     public static void Main() {
@@ -61,5 +63,57 @@ class Program {
         // Output the number of steps taken during network training
         WriteLine($"Number of steps to minimize the Cost function in the neural network: {network.N}\n");
         WriteLine("Interpolation can be seen in interpolation.svg");
+
+
+
+
+
+
+
+
+        //Part B:
+
+        using (var outfile1stD = new System.IO.StreamWriter("..//data/FirstD.data"))
+        using (var outfile2ndD = new System.IO.StreamWriter("..//data/SecondD.data"))
+        using (var outfileAntiD = new System.IO.StreamWriter("..//data/AntiD.data"))
+        {
+            // ... (previous code)
+
+            // Generate responses using the trained network and write to output files
+            for (double z = -1; z <= 1; z += 1.0 / 64)
+            {
+                double d_response = network.d_response(z); // Computed derivative
+                double dd_response = network.dd_response(z); // Computed second derivative
+                double antiderivative_response = network.antiderivative_response(z); // Computed antiderivative
+
+                // Analytical values
+                double analytical_d_response = -2 * z * Cos(5 * z - 1) * Exp(-z * z) - 5 * Sin(5 * z - 1) * Exp(-z * z);
+                double analytical_dd_response = Exp(-z*z)*((4*z*z-27)*Cos(5*z-1) + 20*z*Sin(5*z-1));
+                double analytical_antiderivative_response = -0.5 * sfuns.erf(z);
+
+                // Write to separate output files
+                outfile1stD.Write($"{z} {d_response} {analytical_d_response}\n");
+                outfile2ndD.Write($"{z} {dd_response} {analytical_dd_response}\n");
+                outfileAntiD.Write($"{z} {antiderivative_response} {intg(z,0)}\n");
+            }
+        }
+
+        WriteLine("\n\n Part b:\n");
+        WriteLine("The first and second derivatives and the anti-derivative");
+		WriteLine("can be seen in Plot.svg along with the analytical solutions.");
+
+
+
+
+
+    }
+
+    public static double Wavelet(double x){
+        return Cos(5*x-1)*Exp(-Pow(x,2)); 
+    }
+	
+
+    public static double intg(double x, double a){
+        return integration.integrate(Wavelet, a, x);
     }
 }

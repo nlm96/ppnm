@@ -6,3 +6,10 @@ Using a Gaussian wavelet as the activation function for the neurons
 
 Number of steps to minimize the Cost function in the neural network: 99999
 
+Interpolation can be seen in interpolation.svg
+
+
+ Part b:
+
+The first and second derivatives and the anti-derivative
+can be seen in Plot.svg along with the analytical solutions.

@@ -8,11 +8,11 @@ __AU-mail:__
 201806964@post.au.dk
 
 
-I have obtained 89 points from homework and 10 from exam.
+I have obtained 92 points from homework and 10 from exam.
 According to the grading score, the result is:
 
 score = 0.7*total_points_for_homeworks/10 + 0.3*points_for_exam_project
-= 0.7 * 89/10 + 0.3 *10 = 9.23
+= 0.7 * 92/10 + 0.3 *10 = 9.44
 
 ------------------------------------------------
 #Homework
@@ -38,10 +38,10 @@ score = 0.7*total_points_for_homeworks/10 + 0.3*points_for_exam_project
 ---------------------------------------
 | 09 | Minimization  | 6 | 3 | 0 |  9  |
 ---------------------------------------
-| 10 | Neural Network| 6 | 0 | 0 |  0  |
+| 10 | Neural Network| 6 | 3 | 0 |  9  |
 ---------------------------------------
  ======================================
-|                    total points: 89  |
+|                    total points: 92  |
 
 -------------------------------------------------------------------------------
 
