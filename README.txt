@@ -49,13 +49,13 @@ score = 0.7*total_points_for_homeworks/10 + 0.3*points_for_exam_project
 # Examination project 12 - Bare Bones Particle Swarm Optimization
 
 __Author:__
-Nicklas Månsson
+
 
 __Student number:__
-201806964 64%26=12
+
 
 __AU-mail:__
-201806964@post.au.dk
+
 
 # Bare Bones Particle Swarm Optimization Exam Project
 
