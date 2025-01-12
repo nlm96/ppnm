@@ -1,11 +1,11 @@
 __Author:__
-Nicklas Månsson
+
 
 __Student number:__
-201806964 64%26=12
+
 
 __AU-mail:__
-201806964@post.au.dk
+
 
 
 I have obtained 92 points from homework and 10 from exam.
